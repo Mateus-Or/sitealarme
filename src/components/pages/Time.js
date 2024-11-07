@@ -58,8 +58,8 @@ function Time() {
 
 const dispararSirene = async () => {
   try {
-      const esp8266IP = 'http://';
-      const response = await fetch(`${esp8266IP}/disparar-sirene`, { method: 'GET' });
+      const esp8266IP = '10.84.101.15';
+      const response = await fetch(`${esp8266IP}/tocar`, { method: 'GET' });
       
       if (response.ok) {
           alert("Sirene disparada com sucesso!");
